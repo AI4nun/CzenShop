@@ -1,0 +1,530 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #070707;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e5f7e5;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero img {
+    height: 200px;
+}
+
+.hero h1 {
+    margin-top: 20px;
+    font-size: 48px;
+}
+
+/* Product Section */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Tambahan untuk responsif */
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-item p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.invoice-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.delete-btn {
+    background-color: #e57373;
+}
+
+.order-summary {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary-details p {
+    margin: 10px 0;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    background-color: #388e3c;
+    width: 100%;
+}
+
+.product-detail, .invoice-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    background-color: #388e3c;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Container for Login */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Section for Branding */
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #d9f2d9, #f6f6f6);
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Right Section for Login Form */
+.right-section {
+    flex: 1.5;
+    padding: 40px 30px;
+}
+
+.right-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-size: 14px;
+    color: #555;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.login-form input:focus {
+    border-color: #2e7d32;
+    outline: none;
+}
+
+.form-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: #256d28;
+}
+
+.signup-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-link {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #070707;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #28a745;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #e5f7e5, #ffffff);
+    padding: 100px 20px;
+    text-align: center;
+    color: #2e7d32;
+}
+
+.hero img {
+    height: 200px;
+    max-width: 100%;
+}
+
+.hero h1 {
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Product Section */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-item p {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #218838;
+}
+
+.filter {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.filter form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.filter input {
+    padding: 5px;
+    font-size: 14px;
+    width: 100px;
+}
+
+.filter button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Produk Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card .product-info {
+    padding: 15px;
+}
+
+.product-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Label "New" dan "Sale" */
+.product-card .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.product-card .label.new {
+    background-color: #28a745;
+}
+
+/* Responsif untuk filter dan produk */
+@media (max-width: 768px) {
+    .filter-sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+   
+}

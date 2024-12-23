@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Czen Shop</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="c_t-ugas-frame1">
+            <div class="c_t-ugas-instance">
+              <div class="c_t-ugas-text"><p class="c_t-ugas-text1">CzenShop</p></div>
+            </div>
+          </div> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="login.html" class="button">Sign In</a>
+            <a href="invoice.html" class="button">Invoice</a>
+    </header>
+
+    <section class="filter">
+        <h2>Filter by Price</h2>
+        <form id="price-filter-form">
+            <label for="min-price">Min Price (IDR):</label>
+            <input type="number" id="min-price" placeholder="Min Price" min="0">
+            
+            <label for="max-price">Max Price (IDR):</label>
+            <input type="number" id="max-price" placeholder="Max Price" min="0">
+            
+            <button type="submit">Filter</button>
+        </form>
+    </section>
+    
+    <section class="products-list" id="products-list">
+        <!-- Products will be dynamically inserted here -->
+        <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="assets/images/LS NCT.png" alt="Lightstick NCT">
+            <h3>Lightstick NCT 127 V2</h3>
+            <p>IDR 600,000</p>
+            <a href="product-detail.html?product=lightstick">View Details</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="assets/images/album.png" alt="Album Taeyong">
+            <h3>Album Taeyong - TAP</h3>
+            <p>IDR 300,000</p>
+            <a href="product-detail.html?product=album">View Details</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="assets/images/doll.png" alt="Keyring NCT">
+            <h3>Starfish Keyring NCT 127</h3>
+            <p>IDR 200,000</p>
+            <a href="product-detail.html?product=keyring">View Details</a>
+        </div>
+        
+        <!--Product 4-->
+        <div class="product-card">
+            <img src="assets/images/sumbu.webp" alt="Sumbu Lilin">
+            <h3>Craft SUMBU LILIN</h3>
+            <p>IDR 284</p>
+            <a href="product-detail.html?product=sumbu">View Details</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="assets/images/amplop.webp" alt="Amplop Vintage">
+            <h3>CFART AMPLOP VINTAGE</h3>
+            <p>IDR 128</p>
+            <a href="product-detail.html?product=amplop">View Details</a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="assets/images/holder.webp" alt="Holder Sumbu">
+            <h3>CRAFT HOLDER SUMBU LILIN</h3>
+            <p>IDR 300</p>
+            <a href="product-detail.html?product=holder">View Details</a>
+        </div>
+
+        <!--Product 7-->
+        <div class="product-card">
+            <img src="assets/images/kaos kaki.webp" alt="Kaos Kaki">
+            <h3>KAOS KAKI</h3>
+            <p>IDR 284</p>
+            <a href="product-detail.html?product=kaki">View Details</a>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="assets/images/random box.webp" alt="Random Box">
+            <h3>LUCKY RANDOM BOX</h3>
+            <p>IDR 65000</p>
+            <a href="product-detail.html?product=random">View Details</a>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="assets/images/shredded.webp" alt="Shredded Paper">
+            <h3>CRAFt SGREDDED PAPPER</h3>
+            <p>IDR 300</p>
+            <a href="product-detail.html?product=holder">View Details</a>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
